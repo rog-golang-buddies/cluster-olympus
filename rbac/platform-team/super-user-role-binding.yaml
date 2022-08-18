@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
- name: platform-team-binding
+ name: platform-team-admin-binding
 roleRef:
  kind: ClusterRole
  name: super-user-role
