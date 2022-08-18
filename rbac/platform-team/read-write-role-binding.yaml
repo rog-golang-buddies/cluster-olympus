@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+ name: platform-team-binding
+roleRef:
+ kind: ClusterRole
+ name: platform-team-role
+ apiGroup: rbac.authorization.k8s.io
+subjects:
+- kind: User
+ name: platform-team
+ apiGroup: rbac.authorization.k8s.io
