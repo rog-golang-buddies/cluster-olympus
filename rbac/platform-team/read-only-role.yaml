@@ -2,6 +2,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: read-only
+  label:
+    createdThrough: gitops
 rules:
 - apiGroups:
   - ""
